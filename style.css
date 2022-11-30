@@ -4,6 +4,7 @@ html {
 
 body {
   color: #24292e;
+  font-family: "M PLUS Rounded 1c";
 }
 
 a {
@@ -23,6 +24,13 @@ li {
   font-size: 1.2rem;
 }
 
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+  font-size: 0.8rem;
+  padding: 0 4%;
+}
+
 .site-title {
   line-height: 1px;
   font-weight: 600;
@@ -32,6 +40,12 @@ li {
 
 .site-title a {
   color: #24292e;
+}
+
+.sec-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 /* header */
@@ -69,10 +83,59 @@ li {
   width: 30px;
 }
 
+/* main */
+#main {
+  margin-bottom: 80px;
+}
+
+#main img {
+  width: 100%;
+  max-width: 1920px;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* about */
+#about ul {
+  margin-bottom: 30px;
+}
+
+#about ul li {
+  margin-bottom: 3px;
+}
+
+#about ul li:first-child {
+  margin-bottom: 30px;
+}
+
+/* works */
+#works ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+#works ul li {
+  width: 31%;
+  margin-bottom: 23px;
+}
+
+#works ul li img {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#works ul li img:hover {
+  transform: scale(1.2, 1.2);
+  opacity: 0.7;
+}
+
 /* sp */
 @media screen and (max-width: 600px) {
   .site-title {
     margin-top: 20px;
+    font-size: 1.6rem;
   }
 
   /* header */
@@ -91,5 +154,14 @@ li {
   #header li img.icon {
     width: 20px;
     margin-top: 15px;
+  }
+
+  /* works */
+  #works ul {
+    flex-direction: column;
+  }
+
+  #works ul li {
+    width: 100%;
   }
 }
